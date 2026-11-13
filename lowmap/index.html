@@ -636,6 +636,28 @@ body {
 @media(max-width:720px){.briefing .mast{align-items:flex-start;flex-direction:column;gap:4px;margin:10px 0 14px}.leadstory{grid-template-columns:1fr}.leadphoto{grid-row:1;height:130px}.social .leadstory h2{font-size:34px;margin-top:12px}.desk{display:grid;grid-template-columns:1fr 1fr;gap:10px}.desk h2,.desk .currentcase{grid-column:1/-1}.feed-home .post{padding:16px}.social .streamtitle{margin-top:20px}}
 .metricgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.metric{background:linear-gradient(145deg,#243950,#102338);border-radius:13px;color:white;overflow:hidden;padding:16px 0 0}.social .metric h3,.metric strong,.social .metric small{padding:0 17px}.social .metric h3{font-size:15px;margin:0 0 8px;font-weight:550}.metric strong{font-size:clamp(30px,3.2vw,49px);letter-spacing:-.055em;line-height:1.12}.social .metric small{color:#c1d1de}.metric svg{display:block;width:100%;height:34px;margin-top:7px}.locator{display:grid;grid-template-columns:1.6fr 1fr;margin:16px 0 20px;border:1px solid #d6dfe7;border-radius:15px;overflow:hidden;background:white}.mapcanvas{position:relative;min-height:230px}.basemap{position:absolute;width:100%;height:100%}.mapcaption{position:absolute;left:14px;top:12px;background:#fff;padding:5px 9px;border-radius:6px;font-size:13px;font-weight:700}.mapcaption span{color:#647386;font-weight:450}.social button.mappin{position:absolute;border-radius:50% 50% 50% 15%;background:#fff;color:#273f5b;box-shadow:0 3px 10px #18395440;border:2px solid white;width:41px;height:41px;padding:0;transform:translate(-50%,-50%);transition:background .15s}.social button.mappin.selected{background:#1c56b6;color:white;outline:6px solid #497dce33}.mappin i{position:absolute;right:-2px;bottom:0;width:11px;height:11px;border:2px solid white;border-radius:50%;background:#24ae78}.riverlabel{position:absolute;bottom:12%;left:24%;font:italic 13px Georgia;color:#396f83}.mapinfo{padding:20px 24px}.social .mapinfo .online{color:#138361;font-weight:650}.social .mapinfo h2{margin:5px 0;font-size:27px}.mapinfo p{font-size:14px;color:#56687b}.pinprofile{border-top:1px solid #e4e9ee;padding-top:9px}.mapinfo>a{display:inline-block;color:#2154ac;font-weight:650;margin-top:9px}.social .mast>small{max-width:210px}.showcase{margin-bottom:15px}@media(max-width:760px){.metricgrid{grid-template-columns:repeat(2,1fr);gap:8px}.locator{grid-template-columns:1fr}.mapcanvas{min-height:200px}.metric h3{min-height:36px}.social .mast>small{max-width:none}.mapinfo{padding:16px}}
 .mapcanvas{min-height:276px}.mapinfo{padding:24px 26px}.mapinfo .online{font-size:12px;letter-spacing:.03em}.social .mapinfo h2{font-size:30px;letter-spacing:-.05em}.pinname{position:absolute;top:calc(100% + 7px);left:50%;transform:translateX(-50%);border-radius:5px;color:#334c58;background:#fffffff0;font-size:11px;padding:2px 5px;white-space:nowrap}.prohead{display:flex;align-items:center;gap:10px}.prohead img,.prohead i{height:44px;width:44px;border-radius:50%;object-fit:cover}.prohead i{display:grid;place-items:center;background:#dce8ef;font-style:normal}.prohead strong{font-size:17px}.mapinfo .pinprofile p{margin:9px 0}.maplinks{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.social .maplinks a{padding:8px 13px;border-radius:7px;font-size:13px;font-weight:650;color:#24447a;background:#edf3fa}.social .maplinks a:first-child{background:#1c53b4;color:white}.mappin:focus-visible,.maplinks a:focus-visible{outline:3px solid #e49021;outline-offset:3px}.metric{position:relative}.metric:nth-child(2){background:linear-gradient(140deg,#2b3b61,#172845)}.metric:nth-child(3){background:linear-gradient(140deg,#353650,#24253e)}.metric:nth-child(4){background:linear-gradient(140deg,#384048,#252d36)}
+
+.social .mobileMenu{display:none}
+@media(max-width:760px){
+ .social .layout,.social .layout.wide{display:block;padding:10px max(12px,env(safe-area-inset-right)) max(28px,env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left))}
+ .social .top{position:static;min-height:0;height:auto;flex-wrap:wrap;padding:8px 12px;gap:5px}
+ .social .top input{order:3;max-width:none;width:100%}
+ .social .top>div{gap:0}
+ .social .top>div>a,.social .feedtabs button,.social .maplinks a,.social .file{display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:44px}
+ .social .mobileMenu{display:flex;align-items:center;justify-content:space-between;width:100%;min-height:44px;background:white;color:var(--ink);border:1px solid var(--line);margin-bottom:10px}
+ .mobileMenu span{font-size:13px;color:#536779}
+ .social .rail,.social .wide .rail{display:none}
+ .social .rail.mobileOpen{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));position:static;width:100%;padding:8px;background:white;border:1px solid var(--line);border-radius:10px;overflow:visible;margin-bottom:12px}
+ .social .rail.mobileOpen>a{white-space:normal;min-height:44px;color:var(--ink)}.social .rail.mobileOpen .account{display:block;grid-column:1/-1}.social .rail.mobileOpen .account button{min-height:44px}
+ .social input,.social textarea,.social select{font-size:16px}
+ .social .metricgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .social .metric h3,.social .metric small,.social .metric strong{padding-inline:11px}.social .metric h3{font-size:14px;line-height:1.25;min-height:36px}
+ .social .metric{min-width:0}.social .mapcanvas{min-height:218px}.social .mapinfo{padding:16px}.social button.mappin{width:46px;height:46px}
+ .social .maplinks{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr)}.social .maplinks a{padding-inline:6px}
+ .social .actions button,.social .actions a,.social .deskrow,.social .back{min-height:44px;display:inline-flex;align-items:center}.social .deskrow{display:block}
+ .social .history{height:clamp(180px,38dvh,400px)}.social .filters label{min-width:min(180px,100%)}.social .file{max-width:100%;overflow-wrap:anywhere}
+}
+@media(prefers-reduced-motion:reduce){.social .mappin{transition:none}}
 </style><style id="order-style" media="not all">* {
   box-sizing: border-box;
 }
@@ -882,6 +904,12 @@ a {
   .cards {
     grid-template-columns: 1fr;
   }
+}
+
+@media(max-width:760px){
+ .shell main,.shell .cards,.shell .row div{min-width:0}.shell .row,.shell .cards article,.shell .field{overflow-wrap:anywhere}
+ .shell input,.shell select,.shell textarea{font-size:16px;max-width:100%}.shell nav button,.shell button,.shell summary{min-height:44px}
+ .shell nav{scroll-padding-inline:12px}.shell header span a{display:inline-flex;align-items:center;min-height:44px}
 }
 </style></head><body><div id="root"></div><noscript>Включите JavaScript для просмотра приложения.</noscript><script>const process={env:{NODE_ENV:"production"}};const factories={"articles":function(module,exports,require){
 module.exports=[
@@ -1833,7 +1861,7 @@ function Brand() {
     return ((0, jsx_runtime_1.jsxs)("a", { className: "brand", href: "#feed", children: [(0, jsx_runtime_1.jsx)("i", { children: "\u2696" }), " LowMap"] }));
 }
 function Home() {
-    const [d, D] = (0, react_1.useState)(undefined), [path, H] = (0, react_1.useState)("feed"), [tab, T] = (0, react_1.useState)("all"), [q, Q] = (0, react_1.useState)(""), [filter, F] = (0, react_1.useState)(""), [day, Day] = (0, react_1.useState)(""), [notice, N] = (0, react_1.useState)(""), [uid, U] = (0, react_1.useState)("mikhail");
+    const [d, D] = (0, react_1.useState)(undefined), [path, H] = (0, react_1.useState)("feed"), [tab, T] = (0, react_1.useState)("all"), [q, Q] = (0, react_1.useState)(""), [filter, F] = (0, react_1.useState)(""), [day, Day] = (0, react_1.useState)(""), [notice, N] = (0, react_1.useState)(""), [uid, U] = (0, react_1.useState)("mikhail"), [mobileMenu, setMobileMenu] = (0, react_1.useState)(false);
     const pos = (0, react_1.useRef)(0), timer = (0, react_1.useRef)(null);
     const [view, id, source] = path.split("/");
     const route = (0, react_1.useRef)(view);
@@ -1873,6 +1901,7 @@ function Home() {
             if (route.current === "feed")
                 pos.current = window.scrollY;
             H(v);
+            setMobileMenu(false);
             requestAnimationFrame(() => window.scrollTo(0, v === "feed" ? pos.current : 0));
         }
         change();
@@ -1944,7 +1973,8 @@ function Home() {
                             Q(e.target.value);
                             if (view !== "feed")
                                 (0, client_1.nav)("feed");
-                        } }), (0, jsx_runtime_1.jsxs)("div", { children: [(0, jsx_runtime_1.jsx)("a", { href: "#alerts", "aria-label": "\u0423\u0432\u0435\u0434\u043E\u043C\u043B\u0435\u043D\u0438\u044F", children: "\u2662" }), (0, jsx_runtime_1.jsx)("a", { href: "#messages", "aria-label": "\u0421\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u044F", children: "\u2709" }), (0, jsx_runtime_1.jsx)("a", { href: "#profile", "aria-label": "\u041C\u043E\u0439 \u043F\u0440\u043E\u0444\u0438\u043B\u044C", children: (0, jsx_runtime_1.jsx)(community_1.Avatar, { id: me.id }) })] })] }), (0, jsx_runtime_1.jsxs)("div", { className: "layout " + (msg ? "wide" : ""), children: [(0, jsx_runtime_1.jsxs)("nav", { className: "rail", children: [view === "feed" && (0, jsx_runtime_1.jsx)("a", { className: "railbrand", href: "#feed", children: "LowMap" }), menus.map(([key, icon, label]) => ((0, jsx_runtime_1.jsxs)("a", { className: (msg && key === "messages") || view === key ? "sel" : "", href: "#" + key, children: [(0, jsx_runtime_1.jsx)("i", { children: icon }), label] }, key))), (0, jsx_runtime_1.jsxs)("div", { className: "account", children: [(0, jsx_runtime_1.jsx)(community_1.Byline, { id: me.id }), (0, jsx_runtime_1.jsx)("button", { className: "quiet", onClick: async () => {
+                        } }), (0, jsx_runtime_1.jsxs)("div", { children: [(0, jsx_runtime_1.jsx)("a", { href: "#alerts", "aria-label": "\u0423\u0432\u0435\u0434\u043E\u043C\u043B\u0435\u043D\u0438\u044F", children: "\u2662" }), (0, jsx_runtime_1.jsx)("a", { href: "#messages", "aria-label": "\u0421\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u044F", children: "\u2709" }), (0, jsx_runtime_1.jsx)("a", { href: "#profile", "aria-label": "\u041C\u043E\u0439 \u043F\u0440\u043E\u0444\u0438\u043B\u044C", children: (0, jsx_runtime_1.jsx)(community_1.Avatar, { id: me.id }) })] })] }), (0, jsx_runtime_1.jsxs)("div", { className: "layout " + (msg ? "wide" : ""), children: [(0, jsx_runtime_1.jsxs)("button", { className: "mobileMenu", "aria-expanded": mobileMenu, "aria-controls": "main-nav", onClick: () => setMobileMenu(!mobileMenu), children: [mobileMenu ? "Закрыть меню" : "☰  Меню", (0, jsx_runtime_1.jsx)("span", { children: headings[view] || "Главная" })] }), (0, jsx_runtime_1.jsxs)("nav", { id: "main-nav", "aria-label": "\u0420\u0430\u0437\u0434\u0435\u043B\u044B LowMap", className: "rail " + (mobileMenu ? "mobileOpen" : ""), onClick: e => { if (e.target.closest("a,button"))
+                            setMobileMenu(false); }, children: [view === "feed" && (0, jsx_runtime_1.jsx)("a", { className: "railbrand", href: "#feed", children: "LowMap" }), menus.map(([key, icon, label]) => ((0, jsx_runtime_1.jsxs)("a", { className: (msg && key === "messages") || view === key ? "sel" : "", href: "#" + key, children: [(0, jsx_runtime_1.jsx)("i", { children: icon }), label] }, key))), (0, jsx_runtime_1.jsxs)("div", { className: "account", children: [(0, jsx_runtime_1.jsx)(community_1.Byline, { id: me.id }), (0, jsx_runtime_1.jsx)("button", { className: "quiet", onClick: async () => {
                                             if (await act({ action: "logout" })) {
                                                 H("feed");
                                                 location.hash = "feed";
